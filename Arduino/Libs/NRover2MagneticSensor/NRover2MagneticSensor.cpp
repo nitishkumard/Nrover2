@@ -6,7 +6,7 @@
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
-HardwareSerial* printer;
+extern HardwareSerial* printer;
 
 //<<constructor>> 
 NRover2MagneticSensor::NRover2MagneticSensor(HardwareSerial* print)
@@ -18,15 +18,13 @@ NRover2MagneticSensor::NRover2MagneticSensor(HardwareSerial* print)
 NRover2MagneticSensor::~NRover2MagneticSensor(){/*nothing to destruct*/}
 
 void NRover2MagneticSensor::start(void)
-{
-	printer->println("Isnitlizing Sensors");
-  
+{ 
 	//Initialize Magnetic Sensor
-	//printer->println("Initializing Sensor : HMC5883 Magnetometer"); printer->println("");
+	printer->println("Initializing Sensor : HMC5883 Magnetometer"); printer->println("");
   	if(!mag.begin())
   	{
     		/* There was a problem detecting the HMC5883 ... check your connections */
-	    	//printer->println("Ooops, no HMC5883 detected ... Check your wiring!");
+	    	printer->println("Ooops, no HMC5883 detected ... Check your wiring!");
     		while(1);
   	}
 }
