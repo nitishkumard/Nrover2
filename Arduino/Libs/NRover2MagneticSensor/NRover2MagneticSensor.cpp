@@ -69,7 +69,7 @@ float NRover2MagneticSensor::getHeadingAngle(void)
 	float heading = atan2(event.magnetic.y, event.magnetic.x);
 
 	//Degree adjustments for magnetic inclination
-  	float declinationAngle = -0.017;
+  	float declinationAngle = -0.0321;
   	heading += declinationAngle;
   	if(heading < 0)
     		heading += 2*PI;

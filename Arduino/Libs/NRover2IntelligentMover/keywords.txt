@@ -1,0 +1,22 @@
+#######################################
+# Syntax Coloring Map For NRover2IntelligentMover
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+NRover2IntelligentMover	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+printSensorDetails	KEYWORD2
+printStatus		KEYWORD2
+getHeadingAngle		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+

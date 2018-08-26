@@ -3,3 +3,13 @@ Ultra Sound
 Trig  	44
 Echo	45
 
+Rear Motor
+============================
+Trig  	44
+Echo	45
+
+Front Motor
+============================
+Trig  	44
+Echo	45
+

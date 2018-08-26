@@ -13,6 +13,8 @@ public:
 	void printStatus();
 	int move(int speed);
 	int turn(int degree);
+	void actuateRearMotors(int inByte);
+	void actuateFrontMotors(int inByte);
 };
 
 #endif
